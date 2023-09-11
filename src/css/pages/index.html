@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../dist/css/output.css">
+    <link rel="stylesheet" href="../app.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <div class="sidebar ">
+        <div class="logo-details">
+            <i class='bx bxs-pen'></i>
+            <span class="logo_name"> انجمن ادبی</span>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="#">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="link_name">خانه</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">درباره</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="icon-link">
+                    <a href="#">
+                        <i class='bx bx-collection'></i>
+                        <span class="link_name">اطلاعیه ها</span>
+
+                    </a>
+                    <i class='bx bxs-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#">Category</a></li>
+                    <li><a href="#">Web Design</a></li>
+                    <li><a href="#">Login Form</a></li>
+                    <li><a href="#">Card Design</a></li>
+
+                </ul>
+            </li>
+            <li>
+                <div class="icon-link">
+                    <a href="#">
+                        <i class='bx bx-book-alt'></i>
+                        <span class="link_name">آموزش</span>
+
+                    </a>
+                    <i class='bx bxs-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#">Posts</a></li>
+                    <li><a href="#">Html Css</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                    <li><a href="#">PHP</a></li>
+
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-pie-chart-alt-2'></i>
+                    <span class="link_name">همایشها</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Analystics</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-line-chart'></i>
+                    <span class="link_name">انتشارات</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Charts</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <div class="icon-link">
+                    <a href="#">
+                        <i class='bx bx-plug'></i>
+                        <span class="link_name">مقالات</span>
+
+                    </a>
+                    <i class='bx bxs-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="link_name" href="#">Plugs</a></li>
+                    <li><a href="#">UI Face</a></li>
+                    <li><a href="#">Pigments</a></li>
+                    <li><a href="#">Box Icons</a></li>
+
+                </ul>
+            </li>
+
+
+            <li>
+                <a href="#">
+                    <i class='bx bx-compass'></i>
+                    <span class="link_name">دانشنامه ها</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Explor</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-history'></i>
+                    <span class="link_name">درباره انجمن</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">History</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-cog'></i>
+                    <span class="link_name">تماس </span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Settings</a></li>
+                </ul>
+            </li>
+
+
+
+        </ul>
+       
+
+    </div>
+
+    <!-- Home section -->
+
+    <section class="home-section" style="background-color: #424052;">
+        <div class="home-content" style="background-color: ;">
+            <i class='bx bx-menu'></i>
+            <img src="../../../images/logo.png" class="logo-img">
+        </div>
+        <div class="hero">
+               
+            <nav>
+                
+                
+                <ul>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                    <li><a href=""></a></li>
+                </ul>
+                <button type="button" class="btnmn" onclick="toggleBtn()" id="btn"><span></span></button>
+            </nav>
+            <div class="lamp-container">
+                <img src="../../../images/lamp.png" class="lamp">
+                <img src="../../../images/light.png" class="light" id="light">
+            </div>
+            <div class="text-container">
+                <h1>Taking the<br> next step</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas reprehenderit tempore quaerat harum dolor necessitatibus, 
+                    quia quidem dicta corrupti nostrum iusto.
+                     Natus fuga error animi recusandae iste pariatur minus laudantium?</p>
+                     <a href="">Check My Other Proj</a>
+                     <!-- <div class="control">
+                        <p>04</p>
+                        <div class="line85"><span></span></div>
+                        <p>05</p>
+
+                     </div> -->
+            </div>
+            
+        </div>
+    </section>
+    <script>
+        var btn = document.getElementById("btn");
+        var light = document.getElementById("light");
+
+        function toggleBtn(){
+            btn.classList.toggle("active");
+            light.classList.toggle("on");
+        }
+        let arrow = document.querySelectorAll(".arrow");
+       
+
+        for(var i =0 ; i < arrow.length; i++){
+            arrow[i].addEventListener("click" , (e)=>{
+                let arrowParent = e.target.parentElement.parentElement;
+                
+                arrowParent.classList.toggle("showMenu")
+            });
+        }
+
+        let sidebar = document.querySelector(".sidebar");
+        let sidebarBtn = document.querySelector(".bx-menu");
+        console.log(sidebarBtn);
+        sidebarBtn.addEventListener("click",() =>{
+            sidebar.classList.toggle("close");
+
+        })
+        
+
+
+
+    </script>
+
+</body>
+</html>
